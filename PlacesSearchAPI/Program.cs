@@ -16,6 +16,7 @@ namespace PlacesSearchAPI
         static void Main(string[] args)
         {
 
+            
             string apiKey = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(File.ReadAllText("key.json")).key;
 
             List<PlacesResponseResultsDataContract> placesResults = new List<PlacesResponseResultsDataContract>();
